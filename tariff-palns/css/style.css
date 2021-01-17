@@ -1,0 +1,219 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 11px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #1c1c1c;
+  background-color: #ffffff;
+}
+
+.visually-hidden,
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.tariff-plans {
+  padding: 40px 10px;
+}
+
+.tariff-plans__form {
+  max-width: 370px;
+  margin: 0 auto;
+  padding: 12px 12px 28px;
+  background-color: #f8f8f8;
+  border: 8px solid #ebebeb;
+}
+
+.tariff-plans__subtitle {
+  margin: 0 8px 0 0;
+}
+
+.tariff-plans__list {
+  margin: 0;
+  padding: 0 0 8px;
+  list-style: none;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.tariff-plans__item:not(:last-child) {
+  margin: 0 0 4px;
+}
+
+.tariff-plans__field-radio + label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 8px 12px 50px;
+  cursor: pointer;
+  color: #787878;
+}
+
+.tariff-plans__field-radio:hover + label,
+.tariff-plans__field-radio:checked + label,
+.tariff-plans__field-radio:focus + label {
+  background-color: #ebf4f7;
+  box-shadow: 0 0 0 1px #bcd9e3 inset;
+}
+
+.tariff-plans__field-radio + label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  width: 20px;
+  height: 20px;
+  transform: translateY(-50%);
+  background-color: #fbfbfb;
+  border: 3px solid #dadada;
+  border-radius: 100%;
+}
+
+.tariff-plans__field-radio:hover + label::before {
+  border-color: #34648e;
+}
+
+.tariff-plans__field-radio:checked + label::before {
+  background-color: #0294bf;
+  border-color: #34648e;
+  box-shadow: 0 0 0 3px #fbfbfb inset;
+}
+
+.tariff-palns__name {
+  font-family: "Bebas Neue", "Comic Sans MS", cursive;
+  font-size: 16px;
+}
+
+.tariff-plans__numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 16px;
+  padding: 20px;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.tariff-plans__select {
+  width: 50px;
+  height: 20px;
+  margin: 0;
+  padding: 0 12px 0 3px;
+  font-family: inherit;
+  font-size: 11px;
+  line-height: 18px;
+  color: #2d3137;
+  background-color: #ffffff;
+  border: 1px solid #a8c1ea;
+  box-shadow: none;
+  border-radius: 2px;
+  appearance: none;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23000000%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-position: 38px 50%;
+  background-size: 6px auto;
+}
+
+.tariff-plans__select::-ms-expand {
+  display: none;
+}
+
+.tariff-plans__select:focus {
+  outline: 0;
+  border-color: #34648e;
+}
+
+.tariff-plans__select:hover {
+  border-color: #34648e;
+  cursor: pointer;
+}
+
+.tariff-plans__total {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 8px;
+  font-family: "Bebas Neue", "Comic Sans MS", cursive;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.tariff-plans__total-text {
+  margin: 0 4px 0 0;
+  color: #787878;
+}
+
+.tariff-plans__total-wrap {
+  margin: 0;
+  color: #0294bf;
+}
+
+.tariff-plans__total-wrap sup {
+  position: relative;
+  top: -0.5em;
+  font-size: 11px;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+.tariff-plans__button {
+  display: block;
+  min-width: 130px;
+  height: 36px;
+  margin: 0 auto 26px;
+  padding: 0 20px;
+  overflow-y: auto;
+  font-family: inherit;
+  font-size: 11px;
+  line-height: 36px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #33a845;
+  border: none;
+  border-radius: 25px;
+}
+
+.tariff-plans__button:focus {
+  outline: 0;
+  background-color: #147d25;
+}
+
+.tariff-plans__button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.tariff-plans__button:active {
+  opacity: 0.6;
+}
+
+.tariff-plans__selected {
+  margin: 0;
+  font-size: 12px;
+  color: #0294bf;
+  text-align: center;
+}

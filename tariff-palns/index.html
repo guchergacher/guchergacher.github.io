@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8">
+
+    <title>Тестовое задание</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" as="style">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="js/script.js" as="script">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="tariff-plans">
+      <form class="tariff-plans__form" action="index.html" method="get">
+        <h3 class="visually-hidden">Choose a license plan</h3>
+        <ul class="tariff-plans__list">
+          <li class="tariff-plans__item">
+            <input class="visually-hidden tariff-plans__field-radio" id="answer-1" type="radio" name="selected-plan" value="1">
+            <label for="answer-1">
+              <span class="tariff-palns__name">License plan #1</span>
+              <span class="tariff-palns__price" data-price="13">$13 per license</span>
+            </label>
+          </li>
+          <li class="tariff-plans__item">
+            <input class="visually-hidden tariff-plans__field-radio" id="answer-2" type="radio" name="selected-plan" value="2">
+            <label for="answer-2">
+              <span class="tariff-palns__name">License plan #2</span>
+              <span class="tariff-palns__price" data-price="22">$22 per license</span>
+            </label>
+          </li>
+          <li class="tariff-plans__item">
+            <input class="visually-hidden tariff-plans__field-radio" id="answer-3" type="radio" name="selected-plan" value="3" checked>
+            <label for="answer-3">
+              <span class="tariff-palns__name">License plan #3</span>
+              <span class="tariff-palns__price" data-price="34">$34 per license</span>
+            </label>
+          </li>
+        </ul>
+        <div class="tariff-plans__numbers">
+          <label class="tariff-plans__subtitle" for="answer-select">Numbers of licenses:</label>
+          <select class="tariff-plans__select" id="answer-select" name="numbers-licenses">
+            <option value="5">5</option>
+            <option value="10" selected>10</option>
+            <option value="15">15</option>
+          </select>
+        </div>
+        <div class="tariff-plans__total">
+          <label class="tariff-plans__total-text">
+            Total:
+            <input class="tariff-plans__field-price" type="hidden" name="total-price" value="340">
+          </label>
+          <p class="tariff-plans__total-wrap">
+            <span class="tariff-plans__total-price">$340</span><sup>us</sup>
+          </p>
+        </div>
+        <button class="tariff-plans__button" type="submit">Buy now</button>
+        <p class="tariff-plans__selected">
+          Selected plan: <span class="tariff-plans__selected-num">#3</span>
+        </p>
+      </form>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
