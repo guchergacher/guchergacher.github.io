@@ -6,4 +6,4 @@
 
 [Тестовое для Email Soldiers](https://guchergacher.github.io/email-soldiers/)
 
-[Форма для выбора тарифного плана](https://guchergacher.github.io/tariff-palns/)
+[Форма для выбора тарифного плана](https://guchergacher.github.io/tariff-plans/)
