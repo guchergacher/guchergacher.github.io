@@ -1,5 +1,7 @@
 # guchergacher.github.io
 
+[Тестовое для Центр-Интернет](https://guchergacher.github.io/center-internet/)
+
 [Тестовое для Цифровой Элемент](https://guchergacher.github.io/digital-element/)
 
 [Тестовое для Media Works](https://guchergacher.github.io/media-works/)
